@@ -1,11 +1,11 @@
 import Link from "next/link";
 import React from "react";
 import BuyButton from "./buy-button";
-import { Sansation } from "next/font/google";
+import { Raleway } from "next/font/google";
 import Navigation from "./nav";
 import Language from "./lang";
 
-const font = Sansation({ subsets: ["latin"], weight: ["700"] });
+const font = Raleway({ subsets: ["latin"], weight: ["700"] });
 
 const Header = () => {
   return (
