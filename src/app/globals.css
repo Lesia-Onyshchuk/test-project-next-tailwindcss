@@ -10,7 +10,6 @@
 
 body {
   background-color: #0c0117;
-  padding: 40px 80px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -22,4 +21,52 @@ button {
 
 a {
   text-decoration: none;
+}
+
+.container {
+  width: 1280px;
+  padding: 40px 80px;
+}
+
+.inset-shadow-custom {
+  box-shadow: inset 4px 6px 10px 4px rgba(167, 93, 243, 0.2);
+}
+
+.shadow-best-seller {
+  box-shadow: 0 4px 16px 1px rgba(0, 0, 0, 0.25);
+}
+
+.rounded-28 {
+  border-radius: 28px;
+}
+
+@layer utilities {
+  .before-round-white,
+  .before-round-black {
+    position: relative;
+  }
+  .before-round-white::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+  .before-round-black::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #0c0117;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
 }

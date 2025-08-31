@@ -11,7 +11,7 @@ const font = Raleway({ subsets: ["latin"], weight: ["700"] });
 
 const Header = () => {
   return (
-    <header className="flex items-center gap-[159px]">
+    <header className="flex items-center gap-[159px] container">
       <Link href="/" className={`${font.className} text-white uppercase`}>
         Aleko{" "}
         <span className="bg-gradient-to-r from-[#5bdbfd] via-[#7375ff] via-[#df93ff] to-[#e56f8c] bg-clip-text text-transparent">
