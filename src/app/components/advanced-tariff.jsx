@@ -11,8 +11,8 @@ const AdvancedTariff = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="bg-white px-[36px] pt-[36px] pb-[26px] rounded-28 w-[360px] h-[465px] relative flex justify-between flex-col inset-shadow-custom">
-      <div className="flex top-[-30px] left-1/2 -translate-x-1/2 justify-center items-center px-[33px] py-[11px] shadow-best-seller bg-[linear-gradient(121deg,#5bdbfd_0%,#7375ff_40.3%,#df93ff_79.87%,#e56f8c_100%)] rounded-[18px] absolute">
+    <div className="bg-white xl:px-[36px] xl:pt-[36px] xl:pb-[26px] xs:p-[32px] rounded-28 xl:w-[360px] xl:h-[465px] xs:w-[313px] xs:h-[430px] relative flex justify-between flex-col inset-shadow-custom">
+      <div className="flex xl:top-[-30px] xs:top-[-22px] left-1/2 -translate-x-1/2 justify-center items-center xl:px-[33.5px] xs:px-[26.5px] py-[11px] shadow-best-seller bg-[linear-gradient(121deg,#5bdbfd_0%,#7375ff_40.3%,#df93ff_79.87%,#e56f8c_100%)] rounded-[18px] absolute">
         <p
           className={`${fontmain.className} text-white uppercase text-base font-bold`}
         >
@@ -20,13 +20,13 @@ const AdvancedTariff = () => {
         </p>
       </div>
       <div>
-        <div className="flex gap-[11px] uppercase items-center justify-between mb-[18px]">
+        <div className="flex xl:gap-[11px] xs:gap-[30px] uppercase items-center justify-between mb-[18px]">
           <h3
-            className={`${fontmain.className} text-xl text-[#0c0117] uppercase font-semibold`}
+            className={`${fontmain.className} xl:text-xl xs:text-base text-[#0c0117] uppercase font-semibold`}
           >
             Продвинутый
           </h3>
-          <div className="flex justify-center items-center px-[43px] py-[11.5px] bg-black rounded-[30px]">
+          <div className="flex justify-center items-center xl:px-[43px] xs:px-[33.5px] py-[11.5px] bg-black rounded-[30px]">
             <p
               className={`${fontmain.className} bg-gradient-to-r from-[#5bdbfd] via-[#7375ff] to-[#e56f8c] bg-clip-text text-transparent text-base font-bold`}
             >
@@ -37,7 +37,7 @@ const AdvancedTariff = () => {
         <div
           className={`${fontsecond.className} flex gap-[22px] text-[#0c0117] font-bold items-end leading-none mb-[29px]`}
         >
-          <p className="text-[74px]">149 $</p>
+          <p className="xl:text-[74px] xs:text-[64px]">149 $</p>
           <p className="text-xl line-through">199$</p>
         </div>
         <ul
@@ -53,7 +53,7 @@ const AdvancedTariff = () => {
       </div>
       <button
         onClick={() => setOpen(true)}
-        className={`${fontsecond.className} w-[287px] h-[57px] bg-[#0c0117] text-white font-semibold text-base rounded-[52px] hover:bg-[#ff4a77]`}
+        className={`${fontsecond.className} xl:w-[287px] xl:h-[57px] xs:w-[248px] xs:h-[47px] bg-[#0c0117] text-white font-semibold xl:text-base xs:text-sm rounded-[52px] hover:bg-[#ff4a77]`}
       >
         Купить
       </button>

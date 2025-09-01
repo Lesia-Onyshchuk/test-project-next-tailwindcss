@@ -8,17 +8,17 @@ const font = Raleway({ subsets: ["latin"] });
 
 const Tariffs = () => {
   return (
-    <section className="py-[100px]">
+    <section className="xl:py-[100px] xs:py-[66px]">
       <h2
-        className={`${font.className} text-white uppercase font-bold text-5xl text-center`}
+        className={`${font.className} xs:text-white xs:uppercase xs:font-bold xl:text-5xl xs:text-2xl xs:text-center`}
       >
         Тарифы
       </h2>
-      <ul className="flex justify-between mt-[79px]">
-        <li>
+      <ul className="xs:flex xs:flex-col xl:flex-row xl:justify-between xs:justify-center xl:items-start xs:items-center xl:mt-[79px] xs:mt-[28px]">
+        <li className="xs:mb-[52px] xl:mb-0">
           <BaseTariff />
         </li>
-        <li>
+        <li className="xs:mb-[26px] xl:mb-0">
           <AdvancedTariff />
         </li>
         <li>

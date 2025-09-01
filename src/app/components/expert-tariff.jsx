@@ -11,11 +11,11 @@ const ExpertTariff = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="bg-[linear-gradient(121deg,#5bdbfd_0%,#7375ff_40.3%,#df93ff_79.87%,#e56f8c_100%)] px-[36px] pt-[36px] pb-[26px] rounded-28 w-[360px] h-[465px] flex justify-between flex-col inset-shadow-custom">
+    <div className="bg-[linear-gradient(121deg,#5bdbfd_0%,#7375ff_40.3%,#df93ff_79.87%,#e56f8c_100%)] xl:px-[36px] xl:pt-[36px] xl:pb-[26px] xs:p-[32px] rounded-28 xl:w-[360px] xl:h-[465px] xs:w-[313px] xs:h-[430px] flex justify-between flex-col inset-shadow-custom">
       <div>
-        <div className="flex gap-[11px] uppercase items-center justify-between mb-[18px]">
+        <div className="flex uppercase items-center justify-between mb-[18px]">
           <h3
-            className={`${fontmain.className} text-xl text-white uppercase font-semibold`}
+            className={`${fontmain.className} xl:text-xl xs:text-base text-white uppercase font-semibold`}
           >
             Эксперт
           </h3>
@@ -30,7 +30,7 @@ const ExpertTariff = () => {
         <div
           className={`${fontsecond.className} flex gap-[22px] text-white font-bold items-end leading-none mb-[29px]`}
         >
-          <p className="text-[74px]">299 $</p>
+          <p className="xl:text-[74px] xs:text-[64px]">299 $</p>
           <p className="text-xl line-through">500$</p>
         </div>
         <ul
@@ -48,7 +48,7 @@ const ExpertTariff = () => {
       </div>
       <button
         onClick={() => setOpen(true)}
-        className={`${fontsecond.className} w-[287px] h-[57px] text-[#0c0117] bg-white font-semibold text-base rounded-[52px] hover:bg-[#ff4a77]`}
+        className={`${fontsecond.className} xl:w-[287px] xl:h-[57px] xs:w-[248px] xs:h-[47px] xl:text-[#0c0117] xl:bg-white xs:text-white xs:bg-[#0c0117] font-semibold xl:text-base xs:text-sm rounded-[52px] hover:bg-[#ff4a77]`}
       >
         Купить
       </button>
