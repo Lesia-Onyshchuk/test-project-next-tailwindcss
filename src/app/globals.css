@@ -76,3 +76,14 @@ a {
     border-radius: 50%;
   }
 }
+
+@media screen and (max-width: 393px) {
+  body {
+    padding: 51px 0;
+  }
+
+  .container {
+    width: 393px;
+    padding: 0 40px;
+  }
+}
