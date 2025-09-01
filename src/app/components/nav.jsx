@@ -11,11 +11,11 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div>
+    <div className="flex items-center justify-center">
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className="hidden xs:flex xl:hidden relative z-50"
+        className="burger-btn z-50"
       >
         <Image src="/images/burger.png" width={31} height={21} alt="Menu" />
       </button>
@@ -61,7 +61,9 @@ const Navigation = () => {
               height={18}
             />
           </button>
-          <ul className={`${font.className} text-white text-xl space-y-6`}>
+          <ul
+            className={`${font.className} text-white text-xl text-center space-y-6`}
+          >
             <li>
               <Link
                 href="#"

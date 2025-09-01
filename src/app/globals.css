@@ -46,6 +46,10 @@ a {
   border-radius: 28px;
 }
 
+.burger-btn {
+  display: none !important;
+}
+
 @layer utilities {
   .before-round-white,
   .before-round-black {
@@ -77,7 +81,7 @@ a {
   }
 }
 
-@media screen and (max-width: 393px) {
+/* @media screen and (min-width: 393px) {
   body {
     padding: 51px 0;
   }
@@ -85,5 +89,22 @@ a {
   .container {
     width: 393px;
     padding: 0 40px;
+  }
+} */
+
+@media (min-width: 393px) and (max-width: 1279px) {
+  body {
+    padding: 51px 0;
+  }
+
+  .container {
+    width: 393px;
+    padding: 0 40px;
+  }
+
+  .burger-btn {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
 }

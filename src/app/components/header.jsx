@@ -14,7 +14,7 @@ const Header = () => {
   const { openModal } = useModal();
 
   return (
-    <header className="container flex items-center xl:justify-between xs:gap-[28px] xl:gap-[159px]">
+    <header className="container flex items-center xs:justify-center xl:justify-between xs:gap-[28px] xl:gap-[159px]">
       <Link
         href="/"
         className={`${font.className} flex gap-1 text-white xl:text-lg xs:text-base uppercase xs:w-[178px] xl:w-[200px]`}
