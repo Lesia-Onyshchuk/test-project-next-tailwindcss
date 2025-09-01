@@ -8,7 +8,7 @@ const font = Raleway({ subsets: ["latin"] });
 
 const Tariffs = () => {
   return (
-    <section className="container pt-[100px]">
+    <section className="py-[100px]">
       <h2
         className={`${font.className} text-white uppercase font-bold text-5xl text-center`}
       >

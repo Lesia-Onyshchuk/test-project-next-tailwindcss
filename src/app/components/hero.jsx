@@ -8,7 +8,7 @@ const font = Raleway({ subsets: ["latin"] });
 const Hero = () => {
   return (
     <section
-      className={`${font.className} pt-[67px] pb-[100px] flex gap-[40px] container`}
+      className={`${font.className} pt-[67px] pb-[100px] flex gap-[40px]`}
     >
       <div className="flex flex-col">
         <div className="flex mb-[42px] w-[644px] h-[466px]">

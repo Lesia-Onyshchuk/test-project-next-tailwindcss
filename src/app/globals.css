@@ -13,6 +13,8 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  position: relative;
+  padding: 40px 0;
 }
 
 button {
@@ -25,7 +27,7 @@ a {
 
 .container {
   width: 1280px;
-  padding: 40px 80px;
+  padding: 0 80px;
 }
 
 .inset-shadow-custom {
@@ -34,6 +36,10 @@ a {
 
 .shadow-best-seller {
   box-shadow: 0 4px 16px 1px rgba(0, 0, 0, 0.25);
+}
+
+.shadow-footer {
+  box-shadow: inset 7px 11px 18px 7px rgba(167, 93, 243, 0.2);
 }
 
 .rounded-28 {
