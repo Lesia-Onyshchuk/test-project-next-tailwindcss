@@ -1,10 +1,15 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import { Raleway, Manrope } from "next/font/google";
+import Modal from "./modal";
 
 const fontmain = Raleway({ subsets: ["latin"] });
 const fontsecond = Manrope({ subsets: ["latin"] });
 
 const ExpertTariff = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="bg-[linear-gradient(121deg,#5bdbfd_0%,#7375ff_40.3%,#df93ff_79.87%,#e56f8c_100%)] px-[36px] pt-[36px] pb-[26px] rounded-28 w-[360px] h-[465px] flex justify-between flex-col inset-shadow-custom">
       <div>
@@ -42,10 +47,12 @@ const ExpertTariff = () => {
         </ul>
       </div>
       <button
+        onClick={() => setOpen(true)}
         className={`${fontsecond.className} w-[287px] h-[57px] text-[#0c0117] bg-white font-semibold text-base rounded-[52px] hover:bg-[#ff4a77]`}
       >
         Купить
       </button>
+      {open && <Modal onClose={() => setOpen(false)} />}
     </div>
   );
 };

@@ -1,11 +1,16 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { Raleway, Manrope } from "next/font/google";
+import Modal from "./modal";
 
 const fontmain = Raleway({ subsets: ["latin"] });
 const fontsecond = Manrope({ subsets: ["latin"] });
 
 const BaseTariff = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <div className="bg-[#0c0117] inset-shadow-custom px-[36px] pt-[36px] pb-[26px] rounded-28 w-[360px] h-[465px] relative overflow-hidden flex justify-between flex-col">
       <Image
@@ -35,6 +40,7 @@ const BaseTariff = () => {
         </ul>
       </div>
       <button
+        onClick={() => setOpen(true)}
         className={`${fontsecond.className} w-[287px] h-[57px] bg-white text-[#0c0117] font-semibold text-base rounded-[52px] hover:bg-[#ff4a77]`}
       >
         Купить
@@ -46,6 +52,7 @@ const BaseTariff = () => {
         height={174}
         className="absolute bottom-[-67px] left-[-115px]"
       />
+      {open && <Modal onClose={() => setOpen(false)} />}
     </div>
   );
 };
