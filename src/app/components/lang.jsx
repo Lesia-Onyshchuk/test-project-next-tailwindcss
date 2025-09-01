@@ -19,7 +19,7 @@ const Language = () => {
         <IoIosArrowDown />
       </button>
       {isOpen && (
-        <div className="absolute mt-1 w-12 bg-transparent text-white">
+        <div className="absolute mt-1 w-12 bg-transparent text-white z-20">
           {languages.map((lang) => (
             <button
               key={lang}

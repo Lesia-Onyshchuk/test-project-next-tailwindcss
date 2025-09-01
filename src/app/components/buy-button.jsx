@@ -9,20 +9,18 @@ const font = Raleway({ subsets: ["latin"], weight: ["600"] });
 export default function BuyButton({
   className = "",
   children = "Купить со скидкой",
+  onClick,
   ...props
 }) {
-  const [open, setOpen] = useState(false);
-
   return (
     <>
       <button
-        onClick={() => setOpen(true)}
+        onClick={onClick}
         className={`${font.className} font-semibold leading-[1.66667] ${className}`}
         {...props}
       >
         {children}
       </button>
-      {open && <Modal onClose={() => setOpen(false)} />}
     </>
   );
 }

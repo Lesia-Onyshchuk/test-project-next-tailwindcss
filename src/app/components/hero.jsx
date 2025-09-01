@@ -1,11 +1,15 @@
+"use client";
+
 import Image from "next/image";
 import React from "react";
 import BuyButton from "./buy-button";
 import { Raleway } from "next/font/google";
+import { useModal } from "./modal-provider";
 
 const font = Raleway({ subsets: ["latin"] });
 
 const Hero = () => {
+  const { openModal } = useModal();
   return (
     <section
       className={`${font.className} xl:pt-[67px] xs:pt-[24px] xl:pb-[100px] xs:pb-[66px] xs:flex xl:gap-[40px] xs:flex-col xs:justify-center xl:flex-row`}
@@ -23,6 +27,7 @@ const Hero = () => {
         </div>
         <div className="xs:relative xl:w-[534px] xs:w-[313px] xs:flex xs:mb-[11px]">
           <BuyButton
+            onClick={openModal}
             className="xl:w-[534px] xl:h-[74px] xs:w-[313px] xs:h-[60px] xs:bg-white
             xs:flex xs:items-center xs:justify-center
             xl:text-[22px] xs:text-[14px] xs:text-black xs:rounded-full xs:leading-[1.66667] xs:hover:bg-[#ff4a77]"

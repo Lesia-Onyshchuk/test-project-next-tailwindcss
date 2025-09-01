@@ -6,25 +6,34 @@ import BuyButton from "./buy-button";
 import { Raleway } from "next/font/google";
 import Navigation from "./nav";
 import Language from "./lang";
+import { useModal } from "./modal-provider";
 
 const font = Raleway({ subsets: ["latin"], weight: ["700"] });
 
 const Header = () => {
+  const { openModal } = useModal();
+
   return (
-    <header className="flex items-center gap-[159px] container">
-      <Link href="/" className={`${font.className} text-white uppercase`}>
+    <header className="container flex items-center xl:justify-between xs:gap-[28px] xl:gap-[159px]">
+      <Link
+        href="/"
+        className={`${font.className} flex text-white xl:text-lg xs:text-base uppercase xs:w-[178px] xl:w-[200px]`}
+      >
         Aleko{" "}
         <span className="bg-gradient-to-r from-[#5bdbfd] via-[#7375ff] via-[#df93ff] to-[#e56f8c] bg-clip-text text-transparent">
           Sokurashvili
         </span>
       </Link>
-      <div className="flex items-center gap-[60px]">
-        <Navigation />
-        <Language />
+      <div className="flex items-center xs:gap-0 xl:gap-[60px]">
+        <div className="flex xs:flex-row-reverse xl:flex-row xs:gap-[28px] xl:gap-[60px] xl:items-center">
+          <Navigation />
+          <Language />
+        </div>
         <BuyButton
+          onClick={openModal}
           className="w-[190px] h-[40px] bg-[linear-gradient(84deg,#5bdbfd_0%,#7375ff_40.3%,#df93ff_79.87%,#e56f8c_100%)]
-            flex items-center justify-center
-            text-xs text-white rounded-full"
+            xl:flex items-center justify-center
+            text-xs text-white rounded-full xs:hidden"
         />
       </div>
     </header>

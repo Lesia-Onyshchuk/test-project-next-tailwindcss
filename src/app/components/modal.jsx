@@ -21,7 +21,10 @@ const Modal = ({ onClose }) => {
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-transparent">
+    <div
+      onClick={onClose}
+      className="fixed inset-0 z-50 flex items-center justify-center bg-transparent"
+    >
       <div className="w-[410px] max-w-md relative bg-[#0c0117] inset-shadow-custom px-[50px] pt-[90px] pb-[73px] rounded-28">
         <button onClick={onClose} className="absolute top-[36px] right-[36px]">
           <Image
