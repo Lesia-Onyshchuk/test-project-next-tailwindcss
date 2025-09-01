@@ -12,7 +12,7 @@ const Hero = () => {
   const { openModal } = useModal();
   return (
     <section
-      className={`${font.className} xl:pt-[67px] xs:pt-[24px] xl:pb-[100px] xs:pb-[66px] xs:flex xl:gap-[40px] xs:flex-col xs:justify-center xl:flex-row`}
+      className={`${font.className} xl:pt-[67px] xs:pt-[24px] xl:pb-[100px] xs:pb-[66px] xs:flex xs:gap-0 xl:gap-[40px] xs:flex-col xs:justify-center xs:items-center xl:items-start xl:justify-start xl:flex-row`}
     >
       <div className="flex flex-col">
         <div className="xs:relative xl:static xs:flex xl:mb-[42px] xs:mb-[277px] xl:w-[644px] xl:h-[466px] xs:w-[313px] xs:h-[354px] xs:rounded-[18px] xs:overflow-hidden xl:overflow-visible">
@@ -45,13 +45,13 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <div className="relative">
-        <p className="xs:text-white xl:w-[396px] xs:w-[313px] xl:text-lg xs:text-sm xs:font-normal xl:pt-[84px] xs:pt-0 xs:top-[-220px] xs:absolute xl:static xs:text-center xl:text-left">
+      <div className="xs:relative">
+        <p className="xs:text-white xl:w-[396px] xs:w-[313px] xl:text-lg xs:text-sm xs:font-normal xs:pt-0 xs:top-[-220px] xl:top-[84px] xs:absolute xs:text-center xl:text-left xs:left-1/2 xs:-translate-x-1/2 xl:left-[198px]">
           Станьте известным всего за 3 месяца без затрат на рекламу! Узнайте
           ключ к созданию вирусного контента и превратите свои идеи в миллионные
           просмотры.
         </p>
-        <div className="xs:absolute xl:left-[-114px] xs:left-0 xl:top-[210px] xs:top-[-460px] xs:text-center xl:text-left">
+        <div className="xs:absolute xl:left-[170px] xs:left-1/2 xs:-translate-x-1/2 xl:top-[210px] xs:top-[-460px] xs:text-center xl:text-left">
           <p className="xs:font-bold xl:text-[32px] xs:text-[20px] xl:mb-[15px] xs:mb-[4px] bg-gradient-to-r from-[#5bdbfd] via-[#7375ff] via-[#df93ff] to-[#e56f8c] bg-clip-text text-transparent">
             От 0 до 100,000 за 90 дней
           </p>
