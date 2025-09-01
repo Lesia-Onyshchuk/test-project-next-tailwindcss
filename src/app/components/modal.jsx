@@ -25,7 +25,10 @@ const Modal = ({ onClose }) => {
       onClick={onClose}
       className="fixed inset-0 z-50 flex items-center justify-center bg-transparent"
     >
-      <div className="w-[410px] max-w-md relative bg-[#0c0117] inset-shadow-custom px-[50px] pt-[90px] pb-[73px] rounded-28">
+      <div
+        onClick={(e) => e.stopPropagation()}
+        className="xl:w-[410px] xl:h-[491px] xs:w-screen xs:h-screen xs:rounded-none max-w-md relative bg-[#0c0117] inset-shadow-custom xs:px-[42px] xs:pt-[157px] xl:px-[50px] xl:pt-[90px] xl:pb-[73px] xl:rounded-[28px]"
+      >
         <button onClick={onClose} className="absolute top-[36px] right-[36px]">
           <Image
             src="/images/vector.png"

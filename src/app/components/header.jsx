@@ -17,9 +17,9 @@ const Header = () => {
     <header className="container flex items-center xl:justify-between xs:gap-[28px] xl:gap-[159px]">
       <Link
         href="/"
-        className={`${font.className} flex text-white xl:text-lg xs:text-base uppercase xs:w-[178px] xl:w-[200px]`}
+        className={`${font.className} flex gap-1 text-white xl:text-lg xs:text-base uppercase xs:w-[178px] xl:w-[200px]`}
       >
-        Aleko{" "}
+        <span>Aleko</span>
         <span className="bg-gradient-to-r from-[#5bdbfd] via-[#7375ff] via-[#df93ff] to-[#e56f8c] bg-clip-text text-transparent">
           Sokurashvili
         </span>

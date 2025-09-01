@@ -15,7 +15,7 @@ const Navigation = () => {
       <button
         type="button"
         onClick={() => setIsOpen(!isOpen)}
-        className="flex xl:hidden z-50"
+        className="hidden xs:flex xl:hidden relative z-50"
       >
         <Image src="/images/burger.png" width={31} height={21} alt="Menu" />
       </button>
