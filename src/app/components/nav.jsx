@@ -49,7 +49,7 @@ const Navigation = () => {
         </li>
       </ul>
       {isOpen && (
-        <div className="fixed inset-0 bg-[#0c0117] bg-opacity-95 z-50 flex flex-col items-center justify-center xl:hidden">
+        <div className="fixed h-screen w-screen inset-0 bg-[#0c0117] bg-opacity-95 z-50 flex flex-col items-center justify-center xl:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="absolute top-[36px] right-[36px]"
