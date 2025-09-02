@@ -12,7 +12,7 @@ const BaseTariff = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="bg-[#0c0117] inset-shadow-custom xl:px-[36px] xl:pt-[36px] xl:pb-[26px] p-[32px] rounded-28 xl:w-[360px] xl:h-[560px] w-[313px] h-[430px] relative overflow-hidden flex justify-between flex-col">
+    <div className="bg-[#0c0117] inset-shadow-custom xl:px-[36px] xl:pt-[36px] xl:pb-[26px] p-[32px] rounded-28 xl:w-[360px] xl:h-[560px] w-[313px] h-[560px] relative overflow-hidden flex justify-between flex-col">
       <Image
         src="/images/base-top.png"
         alt=""

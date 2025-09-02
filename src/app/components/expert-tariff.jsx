@@ -11,7 +11,7 @@ const ExpertTariff = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="bg-[linear-gradient(121deg,#1f1d8b_0%,#7b7cab_40.3%,#7b7cab_79.87%,#5bdbfd_100%)] xl:px-[36px] xl:pt-[36px] xl:pb-[26px] p-[32px] rounded-28 xl:w-[360px] xl:h-[560px] w-[313px] h-[430px] flex justify-between flex-col inset-shadow-custom">
+    <div className="bg-[linear-gradient(121deg,#1f1d8b_0%,#7b7cab_40.3%,#7b7cab_79.87%,#5bdbfd_100%)] xl:px-[36px] xl:pt-[36px] xl:pb-[26px] p-[32px] rounded-28 xl:w-[360px] xl:h-[560px] w-[313px] h-[560px] flex justify-between flex-col inset-shadow-custom">
       <div>
         <div className="flex uppercase items-center justify-between mb-[18px]">
           <h3

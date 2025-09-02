@@ -11,7 +11,7 @@ const AdvancedTariff = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="bg-white xl:px-[36px] xl:pt-[36px] xl:pb-[26px] p-[32px] rounded-28 xl:w-[360px] xl:h-[560px] w-[313px] h-[430px] relative flex justify-between flex-col inset-shadow-custom">
+    <div className="bg-white xl:px-[36px] xl:pt-[36px] xl:pb-[26px] p-[32px] rounded-28 xl:w-[360px] xl:h-[560px] w-[313px] h-[560px] relative flex justify-between flex-col inset-shadow-custom">
       <div className="flex xl:top-[-30px] top-[-22px] left-1/2 -translate-x-1/2 justify-center items-center xl:px-[33.5px] px-[26.5px] py-[11px] shadow-best-seller bg-[linear-gradient(121deg,#1f1d8b_0%,#7b7cab_40.3%,#7b7cab_79.87%,#5bdbfd_100%)] rounded-[18px] absolute">
         <p
           className={`${fontmain.className} text-white uppercase text-base font-bold`}

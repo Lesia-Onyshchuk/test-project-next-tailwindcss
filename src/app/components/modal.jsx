@@ -76,7 +76,7 @@ const Modal = ({ onClose }) => {
             </div>
             <button
               type="submit"
-              className={`${font.className} w-full h-[50px] bg-white text-[#0c0117] font-semibold text-sm rounded-[10px] hover:bg-[#ff4a77]`}
+              className={`${font.className} w-full h-[50px] bg-white text-[#0c0117] font-semibold text-sm rounded-[10px] hover:bg-yellow-300`}
             >
               Send
             </button>

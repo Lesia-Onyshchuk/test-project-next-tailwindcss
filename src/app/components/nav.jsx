@@ -23,27 +23,42 @@ const Navigation = () => {
         className={`${font.className} hidden text-base text-white gap-7 xl:flex`}
       >
         <li>
-          <Link href="#" className="py-[10.5px] hover:text-yellow-300">
+          <Link
+            href="#"
+            className="py-[10.5px] hover:text-yellow-300 transition-colors duration-300 ease-in-out"
+          >
             Home
           </Link>
         </li>
         <li>
-          <Link href="#" className="py-[10.5px] hover:text-yellow-300">
+          <Link
+            href="#"
+            className="py-[10.5px] hover:text-yellow-300 transition-colors duration-300 ease-in-out"
+          >
             About
           </Link>
         </li>
         <li>
-          <Link href="#" className="py-[10.5px] hover:text-yellow-300">
+          <Link
+            href="#"
+            className="py-[10.5px] hover:text-yellow-300 transition-colors duration-300 ease-in-out"
+          >
             Plans
           </Link>
         </li>
         <li>
-          <Link href="#" className="py-[10.5px] hover:text-yellow-300">
+          <Link
+            href="#"
+            className="py-[10.5px] hover:text-yellow-300 transition-colors duration-300 ease-in-out"
+          >
             Reviews
           </Link>
         </li>
         <li>
-          <Link href="#" className="py-[10.5px] hover:text-yellow-300">
+          <Link
+            href="#"
+            className="py-[10.5px] hover:text-yellow-300 transition-colors duration-300 ease-in-out"
+          >
             Contacts
           </Link>
         </li>
@@ -68,7 +83,7 @@ const Navigation = () => {
               <Link
                 href="#"
                 onClick={() => setIsOpen(false)}
-                className="hover:text-yellow-300"
+                className="hover:text-yellow-300 transition-colors duration-300 ease-in-out"
               >
                 Home
               </Link>
@@ -77,7 +92,7 @@ const Navigation = () => {
               <Link
                 href="#"
                 onClick={() => setIsOpen(false)}
-                className="hover:text-yellow-300"
+                className="hover:text-yellow-300 transition-colors duration-300 ease-in-out"
               >
                 About
               </Link>
@@ -86,7 +101,7 @@ const Navigation = () => {
               <Link
                 href="#"
                 onClick={() => setIsOpen(false)}
-                className="hover:text-yellow-300"
+                className="hover:text-yellow-300 transition-colors duration-300 ease-in-out"
               >
                 Plans
               </Link>
@@ -95,7 +110,7 @@ const Navigation = () => {
               <Link
                 href="#"
                 onClick={() => setIsOpen(false)}
-                className="hover:text-yellow-300"
+                className="hover:text-yellow-300 transition-colors duration-300 ease-in-out"
               >
                 Reviews
               </Link>
@@ -104,7 +119,7 @@ const Navigation = () => {
               <Link
                 href="#"
                 onClick={() => setIsOpen(false)}
-                className="hover:text-yellow-300"
+                className="hover:text-yellow-300 transition-colors duration-300 ease-in-out"
               >
                 Contacts
               </Link>

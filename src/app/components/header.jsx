@@ -33,7 +33,7 @@ const Header = () => {
           onClick={openModal}
           className="w-[190px] h-[40px] bg-[linear-gradient(121deg,#1f1d8b_0%,#7b7cab_40.3%,#7b7cab_79.87%,#5bdbfd_100%)]
             xl:flex items-center justify-center
-            text-xs text-white rounded-full hidden"
+            text-xs text-white rounded-full hidden hover:text-yellow-300 transition-colors duration-300 ease-in-out"
         />
       </div>
     </header>

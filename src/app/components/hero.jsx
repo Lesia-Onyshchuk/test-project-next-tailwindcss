@@ -15,7 +15,7 @@ const Hero = () => {
       className={`${font.className} xl:pt-[67px] pt-[24px] xl:pb-[100px] pb-[66px] flex gap-0 xl:gap-[40px] flex-col justify-center items-center xl:items-start xl:justify-start xl:flex-row`}
     >
       <div className="flex flex-col">
-        <div className="relative xl:static flex xl:mb-[42px] mb-[277px] xl:w-[644px] xl:h-[466px] w-[313px] h-[354px] rounded-[18px] overflow-hidden xl:overflow-visible">
+        <div className="relative flex xl:mb-[42px] mb-[277px] xl:w-[644px] xl:h-[466px] w-[313px] h-[354px] rounded-[18px] overflow-hidden xl:overflow-visible">
           <Image
             src="/images/operations.jpg"
             width={644}
@@ -23,14 +23,14 @@ const Hero = () => {
             alt="hero"
             className="object-cover rounded-[18px]"
           />
-          <div className="absolute xl:static xl:invisible inset-0 bg-gradient-to-b from-black/0 to-black/100 top-[177px] xl:top-0" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/0 to-black/100 top-[177px] xl:top-0" />
         </div>
         <div className="relative xl:w-[534px] w-[313px] flex mb-[11px]">
           <BuyButton
             onClick={openModal}
             className="xl:w-[534px] xl:h-[74px] w-[313px] h-[60px] bg-white
             flex items-center justify-center
-            xl:text-[22px] text-[14px] text-black rounded-full leading-[1.66667] hover:bg-yellow-300"
+            xl:text-[22px] text-[14px] text-black rounded-full leading-[1.66667] hover:bg-yellow-300 transition-colors duration-300 ease-in-out"
           />
           <p className="flex items-center justify-center xl:w-[74px] xl:h-[74px] w-[60px] h-[60px] font-semibold xl:text-2xl text-xl rounded-full text-black leading-[1.53509] bg-yellow-300 absolute top-0 right-0">
             -50%
@@ -46,16 +46,16 @@ const Hero = () => {
         </div>
       </div>
       <div className="relative">
-        <p className="text-white xl:w-[460px] w-[313px] xl:text-lg text-sm font-normal pt-0 top-[-220px] xl:top-[84px] absolute text-center xl:text-left left-1/2 -translate-x-1/2 xl:left-[198px]">
+        <p className="text-white xl:w-[460px] w-[313px] xl:text-lg text-sm font-normal pt-0 top-[-220px] xl:top-[84px] absolute text-center xl:text-left left-1/2 -translate-x-1/2 xl:left-[218px]">
           Our accounting video courses will help you quickly grasp the basics
           and become a confident user of accounting software. Practical
           exercises and clear explanations make learning effective and engaging.
         </p>
-        <div className="absolute xl:left-[170px] left-1/2 -translate-x-1/2 xl:top-[210px] top-[-460px] text-center xl:text-left">
+        <div className="absolute xl:left-[150px] left-1/2 -translate-x-1/2 xl:top-[220px] top-[-420px] text-center xl:text-left">
           <p className="font-bold xl:text-[32px] text-[20px] xl:mb-[15px] mb-[4px] bg-gradient-to-r from-[#5bdbfd] via-[#7b7cab] via-[#1f1d8b] to-[#ffffff] bg-clip-text text-transparent">
             Over 30 video lessons
           </p>
-          <h1 className="leading-[1.1] text-yellow-300 font-extrabold xl:text-[96px] text-[54px] uppercase xl:w-[570px] w-[313px] flex">
+          <h1 className="leading-[1.1] text-yellow-300 font-extrabold xl:text-[90px] text-[48px] uppercase xl:w-[600px] w-[313px] flex">
             Practical knowledge that works
           </h1>
         </div>
