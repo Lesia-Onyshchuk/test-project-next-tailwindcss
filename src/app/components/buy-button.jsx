@@ -1,8 +1,6 @@
 "use client";
 
 import { Raleway } from "next/font/google";
-import { useState } from "react";
-import Modal from "./modal";
 
 const font = Raleway({ subsets: ["latin"], weight: ["600"] });
 

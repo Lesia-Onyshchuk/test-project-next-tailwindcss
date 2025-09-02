@@ -27,7 +27,7 @@ const Modal = ({ onClose }) => {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="xl:w-[410px] xl:h-[491px] xs:w-screen xs:h-screen xs:rounded-none relative bg-[#0c0117] inset-shadow-custom xs:px-[42px] xs:pt-[157px] xl:px-[50px] xl:pt-[90px] xl:pb-[73px] xl:rounded-[28px]"
+        className=" relative xl:w-[410px] xl:h-[491px] xs:w-screen xs:h-screen xs:rounded-none bg-[#0c0117] xl:inset-shadow-custom xs:px-[42px] xs:pt-[157px] xs:pb-[41px] xl:px-[50px] xl:pt-[90px] xl:pb-[73px] xl:rounded-[28px]"
       >
         <button
           onClick={onClose}
@@ -41,12 +41,12 @@ const Modal = ({ onClose }) => {
           />
         </button>
         <h3
-          className={`${font.className} text-white uppercase font-bold text-2xl mb-[36px]`}
+          className={`${font.className} text-white uppercase text-center font-bold text-2xl mb-[36px]`}
         >
           Укажите свои данные
         </h3>
         <Formik initialValues={initialValues} onSubmit={handleSubmit}>
-          <Form className="flex flex-col xs:items-between xl:justify-start">
+          <Form className="flex flex-col xs:items-center xl:justify-start xs:justify-between">
             <div className="flex flex-col">
               <Field
                 placeholder="Имя"
@@ -71,7 +71,7 @@ const Modal = ({ onClose }) => {
                 className="w-[310px] py-[15px] px-[20px] rounded-[14px] placeholder:text-[#0c0117]
                placeholder:text-[14px]
                placeholder:font-raleway
-               placeholder:font-normal mb-[40px]"
+               placeholder:font-normal xs:mb-[120px] xl:mb-[40px]"
               />
             </div>
             <button

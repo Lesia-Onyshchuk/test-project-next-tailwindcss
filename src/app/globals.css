@@ -81,17 +81,6 @@ a {
   }
 }
 
-/* @media screen and (min-width: 393px) {
-  body {
-    padding: 51px 0;
-  }
-
-  .container {
-    width: 393px;
-    padding: 0 40px;
-  }
-} */
-
 @media (min-width: 393px) and (max-width: 1279px) {
   body {
     padding: 51px 0;
