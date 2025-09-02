@@ -27,7 +27,7 @@ const Modal = ({ onClose }) => {
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className=" relative xl:w-[410px] xl:h-[491px] xs:w-screen xs:h-screen xs:rounded-none bg-[#0c0117] xl:inset-shadow-custom xs:px-[42px] xs:pt-[157px] xs:pb-[41px] xl:px-[50px] xl:pt-[90px] xl:pb-[73px] xl:rounded-[28px]"
+        className=" relative xl:w-[410px] xl:h-[491px] xs:w-screen xs:h-screen xs:rounded-none bg-[#0c0117] inset-shadow-custom xs:px-[42px] xs:pt-[157px] xs:pb-[41px] xl:px-[50px] xl:pt-[90px] xl:pb-[73px] xl:rounded-[28px]"
       >
         <button
           onClick={onClose}
