@@ -14,10 +14,10 @@ const Header = () => {
   const { openModal } = useModal();
 
   return (
-    <header className="container flex items-center xs:justify-center xl:justify-between xs:gap-[28px] xl:gap-[159px]">
+    <header className="container flex items-center justify-center xl:justify-between gap-[28px] xl:gap-[159px]">
       <Link
         href="/"
-        className={`${font.className} flex gap-1 text-white xl:text-lg xs:text-base uppercase xs:w-[178px] xl:w-[200px]`}
+        className={`${font.className} flex gap-1 text-white xl:text-lg text-base uppercase w-[178px] xl:w-[200px]`}
       >
         <span>Aleko</span>
         <span className="bg-gradient-to-r from-[#5bdbfd] via-[#7375ff] via-[#df93ff] to-[#e56f8c] bg-clip-text text-transparent">
@@ -25,7 +25,7 @@ const Header = () => {
         </span>
       </Link>
       <div className="flex items-center xs:gap-0 xl:gap-[60px]">
-        <div className="flex xs:flex-row-reverse xl:flex-row xs:gap-[28px] xl:gap-[60px] xl:items-center">
+        <div className="flex flex-row-reverse xl:flex-row gap-[28px] xl:gap-[60px] xl:items-center">
           <Navigation />
           <Language />
         </div>
@@ -33,7 +33,7 @@ const Header = () => {
           onClick={openModal}
           className="w-[190px] h-[40px] bg-[linear-gradient(84deg,#5bdbfd_0%,#7375ff_40.3%,#df93ff_79.87%,#e56f8c_100%)]
             xl:flex items-center justify-center
-            text-xs text-white rounded-full xs:hidden"
+            text-xs text-white rounded-full hidden"
         />
       </div>
     </header>

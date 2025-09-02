@@ -20,7 +20,7 @@ const Navigation = () => {
         <Image src="/images/burger.png" width={31} height={21} alt="Menu" />
       </button>
       <ul
-        className={`${font.className} text-base text-white gap-7 hidden xl:flex`}
+        className={`${font.className} hidden text-base text-white gap-7 xl:flex`}
       >
         <li>
           <Link href="#" className="py-[10.5px] hover:text-[#FF4A77]">

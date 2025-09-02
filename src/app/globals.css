@@ -81,7 +81,7 @@ a {
   }
 }
 
-@media (min-width: 393px) and (max-width: 1279px) {
+@media screen and (max-width: 1279px) {
   body {
     padding: 51px 0;
   }

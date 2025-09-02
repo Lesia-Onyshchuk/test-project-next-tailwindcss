@@ -23,15 +23,15 @@ const Modal = ({ onClose }) => {
   return (
     <div
       onClick={onClose}
-      className="fixed xs:w-screen xs:h-screen inset-0 z-50 flex items-center justify-center bg-transparent"
+      className="fixed w-screen h-screen inset-0 z-50 flex items-center justify-center bg-transparent"
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className=" relative xl:w-[410px] xl:h-[491px] xs:w-screen xs:h-screen xs:rounded-none bg-[#0c0117] inset-shadow-custom xs:px-[42px] xs:pt-[157px] xs:pb-[41px] xl:px-[50px] xl:pt-[90px] xl:pb-[73px] xl:rounded-[28px]"
+        className=" relative xl:w-[410px] xl:h-[491px] w-screen h-screen rounded-none bg-[#0c0117] inset-shadow-custom px-[42px] pt-[157px] pb-[41px] xl:px-[50px] xl:pt-[90px] xl:pb-[73px] xl:rounded-[28px]"
       >
         <button
           onClick={onClose}
-          className="absolute xl:top-[28px] xs:right-[32px] xs:top-[32px] xl:right-[28px]"
+          className="absolute xl:top-[28px] right-[32px] top-[32px] xl:right-[28px]"
         >
           <Image
             src="/images/vector.png"
@@ -46,12 +46,12 @@ const Modal = ({ onClose }) => {
           Укажите свои данные
         </h3>
         <Formik initialValues={initialValues} onSubmit={handleSubmit}>
-          <Form className="flex flex-col xs:items-center xl:justify-start xs:justify-between">
-            <div className="flex flex-col">
+          <Form className="flex flex-col items-center xl:justify-start justify-between">
+            <div className="flex flex-col w-full">
               <Field
                 placeholder="Имя"
                 name="name"
-                className="w-[310px] py-[15px] px-[20px] rounded-[14px] placeholder:text-[#0c0117]
+                className="w-full py-[15px] px-[20px] rounded-[14px] placeholder:text-[#0c0117]
                placeholder:text-[14px]
                placeholder:font-raleway
                placeholder:font-normal mb-[18px]"
@@ -59,7 +59,7 @@ const Modal = ({ onClose }) => {
               <Field
                 placeholder="Ник Telegram"
                 name="nik"
-                className="w-[310px] py-[15px] px-[20px] rounded-[14px] placeholder:text-[#0c0117]
+                className="w-full py-[15px] px-[20px] rounded-[14px] placeholder:text-[#0c0117]
                placeholder:text-[14px]
                placeholder:font-raleway
                placeholder:font-normal mb-[18px]"
@@ -68,15 +68,15 @@ const Modal = ({ onClose }) => {
                 placeholder="Email*"
                 name="email"
                 required
-                className="w-[310px] py-[15px] px-[20px] rounded-[14px] placeholder:text-[#0c0117]
+                className="w-full py-[15px] px-[20px] rounded-[14px] placeholder:text-[#0c0117]
                placeholder:text-[14px]
                placeholder:font-raleway
-               placeholder:font-normal xs:mb-[120px] xl:mb-[40px]"
+               placeholder:font-normal mb-[120px] xl:mb-[40px]"
               />
             </div>
             <button
               type="submit"
-              className={`${font.className} w-[310px] h-[50px] bg-white text-[#0c0117] font-semibold text-sm rounded-[10px] hover:bg-[#ff4a77]`}
+              className={`${font.className} w-full h-[50px] bg-white text-[#0c0117] font-semibold text-sm rounded-[10px] hover:bg-[#ff4a77]`}
             >
               Отправить
             </button>
