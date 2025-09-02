@@ -6,7 +6,7 @@ const font = Raleway({ subsets: ["latin"], weight: ["600"] });
 
 export default function BuyButton({
   className = "",
-  children = "Купить со скидкой",
+  children = "Buy discounted",
   onClick,
   ...props
 }) {

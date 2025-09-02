@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 
-const languages = ["RU", "EN"];
+const languages = ["EN", "UA"];
 
 const Language = () => {
   const [isOpen, setIsOpen] = useState(false);

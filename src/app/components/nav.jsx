@@ -24,27 +24,27 @@ const Navigation = () => {
       >
         <li>
           <Link href="#" className="py-[10.5px] hover:text-[#FF4A77]">
-            Структура
+            Home
           </Link>
         </li>
         <li>
           <Link href="#" className="py-[10.5px] hover:text-[#FF4A77]">
-            Обо мне
+            About
           </Link>
         </li>
         <li>
           <Link href="#" className="py-[10.5px] hover:text-[#FF4A77]">
-            Плюсы
+            Plans
           </Link>
         </li>
         <li>
           <Link href="#" className="py-[10.5px] hover:text-[#FF4A77]">
-            Отзывы
+            Reviews
           </Link>
         </li>
         <li>
           <Link href="#" className="py-[10.5px] hover:text-[#FF4A77]">
-            FAQ
+            Contacts
           </Link>
         </li>
       </ul>
@@ -70,7 +70,7 @@ const Navigation = () => {
                 onClick={() => setIsOpen(false)}
                 className="hover:text-[#FF4A77]"
               >
-                Структура
+                Home
               </Link>
             </li>
             <li>
@@ -79,7 +79,7 @@ const Navigation = () => {
                 onClick={() => setIsOpen(false)}
                 className="hover:text-[#FF4A77]"
               >
-                Обо мне
+                About
               </Link>
             </li>
             <li>
@@ -88,7 +88,7 @@ const Navigation = () => {
                 onClick={() => setIsOpen(false)}
                 className="hover:text-[#FF4A77]"
               >
-                Плюсы
+                Plans
               </Link>
             </li>
             <li>
@@ -97,7 +97,7 @@ const Navigation = () => {
                 onClick={() => setIsOpen(false)}
                 className="hover:text-[#FF4A77]"
               >
-                Отзывы
+                Reviews
               </Link>
             </li>
             <li>
@@ -106,7 +106,7 @@ const Navigation = () => {
                 onClick={() => setIsOpen(false)}
                 className="hover:text-[#FF4A77]"
               >
-                FAQ
+                Contacts
               </Link>
             </li>
           </ul>

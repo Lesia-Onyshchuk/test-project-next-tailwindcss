@@ -3,7 +3,7 @@ import "./globals.css";
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="ru">
+    <html lang="en">
       <head>
         <title>Test Project - Next.js & Tailwind CSS</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />

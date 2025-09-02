@@ -41,15 +41,15 @@ const Modal = ({ onClose }) => {
           />
         </button>
         <h3
-          className={`${font.className} text-white uppercase text-center font-bold text-2xl mb-[36px]`}
+          className={`${font.className} text-white uppercase text-center font-bold text-l mb-[36px]`}
         >
-          Укажите свои данные
+          Please provide your information
         </h3>
         <Formik initialValues={initialValues} onSubmit={handleSubmit}>
           <Form className="flex flex-col items-center xl:justify-start justify-between">
             <div className="flex flex-col w-full">
               <Field
-                placeholder="Имя"
+                placeholder="Name"
                 name="name"
                 className="w-full py-[15px] px-[20px] rounded-[14px] placeholder:text-[#0c0117]
                placeholder:text-[14px]
@@ -57,7 +57,7 @@ const Modal = ({ onClose }) => {
                placeholder:font-normal mb-[18px]"
               />
               <Field
-                placeholder="Ник Telegram"
+                placeholder="Telegram username"
                 name="nik"
                 className="w-full py-[15px] px-[20px] rounded-[14px] placeholder:text-[#0c0117]
                placeholder:text-[14px]
@@ -78,7 +78,7 @@ const Modal = ({ onClose }) => {
               type="submit"
               className={`${font.className} w-full h-[50px] bg-white text-[#0c0117] font-semibold text-sm rounded-[10px] hover:bg-[#ff4a77]`}
             >
-              Отправить
+              Send
             </button>
           </Form>
         </Formik>

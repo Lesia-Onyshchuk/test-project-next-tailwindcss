@@ -17,11 +17,11 @@ const Hero = () => {
       <div className="flex flex-col">
         <div className="relative xl:static flex xl:mb-[42px] mb-[277px] xl:w-[644px] xl:h-[466px] w-[313px] h-[354px] rounded-[18px] overflow-hidden xl:overflow-visible">
           <Image
-            src="/images/hero.png"
+            src="/images/operations.jpg"
             width={644}
             height={466}
             alt="hero"
-            className="object-cover"
+            className="object-cover rounded-[18px]"
           />
           <div className="absolute xl:static xl:invisible inset-0 bg-gradient-to-b from-black/0 to-black/100 top-[177px] xl:top-0" />
         </div>
@@ -32,31 +32,31 @@ const Hero = () => {
             flex items-center justify-center
             xl:text-[22px] text-[14px] text-black rounded-full leading-[1.66667] hover:bg-[#ff4a77]"
           />
-          <p className="flex items-center justify-center xl:w-[74px] xl:h-[74px] w-[60px] h-[60px] font-semibold xl:text-2xl text-xl rounded-full text-white leading-[1.53509] bg-[#ff4a77] absolute top-0 right-0">
+          <p className="flex items-center justify-center xl:w-[74px] xl:h-[74px] w-[60px] h-[60px] font-semibold xl:text-2xl text-xl rounded-full text-white leading-[1.53509] bg-yellow-300 absolute top-0 right-0">
             -50%
           </p>
         </div>
         <div className="flex xl:gap-[16px] gap-[11px] items-center xl:pl-[176.5px] pl-[79.5px]">
-          <p className="xl:text-2xl text-xl text-[#ff4a77] font-semibold leading-[1.53509]">
-            1000 грн
+          <p className="xl:text-2xl text-xl text-yellow-300 font-semibold leading-[1.53509]">
+            from 99 $
           </p>
           <p className="leading-[1.53509] text-sm text-[#c5c5c5] line-through">
-            2000грн
+            139 $
           </p>
         </div>
       </div>
       <div className="relative">
-        <p className="text-white xl:w-[396px] w-[313px] xl:text-lg text-sm font-normal pt-0 top-[-220px] xl:top-[84px] absolute text-center xl:text-left left-1/2 -translate-x-1/2 xl:left-[198px]">
-          Станьте известным всего за 3 месяца без затрат на рекламу! Узнайте
-          ключ к созданию вирусного контента и превратите свои идеи в миллионные
-          просмотры.
+        <p className="text-white xl:w-[460px] w-[313px] xl:text-lg text-sm font-normal pt-0 top-[-220px] xl:top-[84px] absolute text-center xl:text-left left-1/2 -translate-x-1/2 xl:left-[198px]">
+          Our accounting video courses will help you quickly grasp the basics
+          and become a confident user of accounting software. Practical
+          exercises and clear explanations make learning effective and engaging.
         </p>
         <div className="absolute xl:left-[170px] left-1/2 -translate-x-1/2 xl:top-[210px] top-[-460px] text-center xl:text-left">
-          <p className="font-bold xl:text-[32px] text-[20px] xl:mb-[15px] mb-[4px] bg-gradient-to-r from-[#5bdbfd] via-[#7375ff] via-[#df93ff] to-[#e56f8c] bg-clip-text text-transparent">
-            От 0 до 100,000 за 90 дней
+          <p className="font-bold xl:text-[32px] text-[20px] xl:mb-[15px] mb-[4px] bg-gradient-to-r from-[#5bdbfd] via-[#7b7cab] via-[#1f1d8b] to-[#ffffff] bg-clip-text text-transparent">
+            Over 30 video lessons
           </p>
-          <h1 className="leading-[1.1] text-white font-extrabold xl:text-[96px] text-[54px] uppercase xl:w-[570px] w-[313px] flex">
-            Секреты Вирусных Видео
+          <h1 className="leading-[1.1] text-yellow-300 font-extrabold xl:text-[96px] text-[54px] uppercase xl:w-[570px] w-[313px] flex">
+            Practical knowledge that works
           </h1>
         </div>
       </div>

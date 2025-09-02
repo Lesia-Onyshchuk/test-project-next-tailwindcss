@@ -12,7 +12,7 @@ const Tariffs = () => {
       <h2
         className={`${font.className} text-white uppercase font-bold xl:text-5xl text-2xl text-center`}
       >
-        Тарифы
+        Plans
       </h2>
       <ul className="flex flex-col xl:flex-row xl:justify-between justify-center xl:items-start items-center xl:mt-[79px] mt-[28px]">
         <li className="mb-[52px] xl:mb-0">
