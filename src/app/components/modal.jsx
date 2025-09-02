@@ -23,13 +23,16 @@ const Modal = ({ onClose }) => {
   return (
     <div
       onClick={onClose}
-      className="fixed inset-0 z-50 flex items-center justify-center bg-transparent"
+      className="fixed xs:w-screen xs:h-screen inset-0 z-50 flex items-center justify-center bg-transparent"
     >
       <div
         onClick={(e) => e.stopPropagation()}
-        className="xl:w-[410px] xl:h-[491px] xs:w-screen xs:h-screen xs:rounded-none max-w-md relative bg-[#0c0117] inset-shadow-custom xs:px-[42px] xs:pt-[157px] xl:px-[50px] xl:pt-[90px] xl:pb-[73px] xl:rounded-[28px]"
+        className="xl:w-[410px] xl:h-[491px] xs:w-screen xs:h-screen xs:rounded-none relative bg-[#0c0117] inset-shadow-custom xs:px-[42px] xs:pt-[157px] xl:px-[50px] xl:pt-[90px] xl:pb-[73px] xl:rounded-[28px]"
       >
-        <button onClick={onClose} className="absolute top-[36px] right-[36px]">
+        <button
+          onClick={onClose}
+          className="absolute xl:top-[28px] xs:right-[32px] xs:top-[32px] xl:right-[28px]"
+        >
           <Image
             src="/images/vector.png"
             alt="Закрыть"
@@ -43,32 +46,34 @@ const Modal = ({ onClose }) => {
           Укажите свои данные
         </h3>
         <Formik initialValues={initialValues} onSubmit={handleSubmit}>
-          <Form>
-            <Field
-              placeholder="Имя"
-              name="name"
-              className="w-[310px] py-[15px] px-[20px] rounded-[14px] placeholder:text-[#0c0117]
-             placeholder:text-[14px]
-             placeholder:font-raleway
-             placeholder:font-normal mb-[18px]"
-            />
-            <Field
-              placeholder="Ник Telegram"
-              name="nik"
-              className="w-[310px] py-[15px] px-[20px] rounded-[14px] placeholder:text-[#0c0117]
-             placeholder:text-[14px]
-             placeholder:font-raleway
-             placeholder:font-normal mb-[18px]"
-            />
-            <Field
-              placeholder="Email*"
-              name="email"
-              required
-              className="w-[310px] py-[15px] px-[20px] rounded-[14px] placeholder:text-[#0c0117]
-             placeholder:text-[14px]
-             placeholder:font-raleway
-             placeholder:font-normal mb-[40px]"
-            />
+          <Form className="flex flex-col xs:items-between xl:justify-start">
+            <div className="flex flex-col">
+              <Field
+                placeholder="Имя"
+                name="name"
+                className="w-[310px] py-[15px] px-[20px] rounded-[14px] placeholder:text-[#0c0117]
+               placeholder:text-[14px]
+               placeholder:font-raleway
+               placeholder:font-normal mb-[18px]"
+              />
+              <Field
+                placeholder="Ник Telegram"
+                name="nik"
+                className="w-[310px] py-[15px] px-[20px] rounded-[14px] placeholder:text-[#0c0117]
+               placeholder:text-[14px]
+               placeholder:font-raleway
+               placeholder:font-normal mb-[18px]"
+              />
+              <Field
+                placeholder="Email*"
+                name="email"
+                required
+                className="w-[310px] py-[15px] px-[20px] rounded-[14px] placeholder:text-[#0c0117]
+               placeholder:text-[14px]
+               placeholder:font-raleway
+               placeholder:font-normal mb-[40px]"
+              />
+            </div>
             <button
               type="submit"
               className={`${font.className} w-[310px] h-[50px] bg-white text-[#0c0117] font-semibold text-sm rounded-[10px] hover:bg-[#ff4a77]`}
