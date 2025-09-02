@@ -5,11 +5,13 @@ import React from "react";
 import BuyButton from "./buy-button";
 import { Raleway } from "next/font/google";
 import { useModal } from "./modal-provider";
+import { useLanguage } from "./lang-provider";
 
 const font = Raleway({ subsets: ["latin"] });
 
 const Footer = () => {
   const { openModal } = useModal();
+  const { t } = useLanguage();
 
   return (
     <footer
@@ -47,13 +49,13 @@ const Footer = () => {
         <div className="xl:w-[608px] w-[393px] xl:bg-[linear-gradient(124deg,#1f1d8b_0%,#7b7cab_40.3%,#ffffff_79.87%,#5bdbfd_100%)] bg-[#0c0117]">
           <div className="absolute z-20 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 xl:w-[400px] w-[200px] flex items-center flex-col">
             <h2 className="xl:text-4xl text-xl font-bold uppercase text-white text-center mb-[20px]">
-              From beginner to professional –{" "}
+              {t("title_footer").split("–")[0]} –{" "}
               <span className="bg-gradient-to-r from-[#5bdbfd] via-[#7b7cab] via-[#1f1d8b] to-[#7b7cab] bg-clip-text text-transparent">
-                your accounting journey
+                {t("title_footer").split("–")[1]}
               </span>
             </h2>
             <p className="text-white text-center xl:text-2xl text-sm font-medium xl:mb-[44px] mb-[62px]">
-              Resources to help you with it!
+              {t("footer_text")}
             </p>
             <div className="relative z-20 xl:w-[480px] w-[240px] flex mb-[11px]">
               <BuyButton

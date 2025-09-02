@@ -5,11 +5,13 @@ import React from "react";
 import BuyButton from "./buy-button";
 import { Raleway } from "next/font/google";
 import { useModal } from "./modal-provider";
+import { useLanguage } from "./lang-provider";
 
 const font = Raleway({ subsets: ["latin"] });
 
 const Hero = () => {
   const { openModal } = useModal();
+  const { t } = useLanguage();
   return (
     <section
       className={`${font.className} xl:pt-[67px] pt-[24px] xl:pb-[100px] pb-[66px] flex gap-0 xl:gap-[40px] flex-col justify-center items-center xl:items-start xl:justify-start xl:flex-row`}
@@ -38,7 +40,7 @@ const Hero = () => {
         </div>
         <div className="flex xl:gap-[16px] gap-[11px] items-center xl:pl-[176.5px] pl-[79.5px]">
           <p className="xl:text-2xl text-xl text-yellow-300 font-semibold leading-[1.53509]">
-            from 99 $
+            {t("from")} 99 $
           </p>
           <p className="leading-[1.53509] text-sm text-[#c5c5c5] line-through">
             139 $
@@ -47,16 +49,14 @@ const Hero = () => {
       </div>
       <div className="relative">
         <p className="text-white xl:w-[460px] w-[313px] xl:text-lg text-sm font-normal pt-0 top-[-220px] xl:top-[84px] absolute text-center xl:text-left left-1/2 -translate-x-1/2 xl:left-[218px]">
-          Our accounting video courses will help you quickly grasp the basics
-          and become a confident user of accounting software. Practical
-          exercises and clear explanations make learning effective and engaging.
+          {t("description")}
         </p>
         <div className="absolute xl:left-[150px] left-1/2 -translate-x-1/2 xl:top-[220px] top-[-420px] text-center xl:text-left">
           <p className="font-bold xl:text-[32px] text-[20px] xl:mb-[15px] mb-[4px] bg-gradient-to-r from-[#5bdbfd] via-[#7b7cab] via-[#1f1d8b] to-[#ffffff] bg-clip-text text-transparent">
-            Over 30 video lessons
+            {t("text")}
           </p>
           <h1 className="leading-[1.1] text-yellow-300 font-extrabold xl:text-[90px] text-[48px] uppercase xl:w-[600px] w-[313px] flex">
-            Practical knowledge that works
+            {t("title")}
           </h1>
         </div>
       </div>

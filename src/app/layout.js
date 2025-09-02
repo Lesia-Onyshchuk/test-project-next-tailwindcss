@@ -1,3 +1,4 @@
+import { LanguageProvider } from "./components/lang-provider";
 import { ModalProvider } from "./components/modal-provider";
 import "./globals.css";
 
@@ -10,7 +11,9 @@ export default function RootLayout({ children }) {
         <meta name="description" content="My Next.js app with Tailwind" />
       </head>
       <body>
-        <ModalProvider>{children}</ModalProvider>
+        <ModalProvider>
+          <LanguageProvider>{children}</LanguageProvider>
+        </ModalProvider>
       </body>
     </html>
   );

@@ -1,0 +1,48 @@
+{
+  "nav": ["Home", "About", "Plans", "Reviews", "Contacts"],
+  "description": "Our accounting video courses will help you quickly grasp the basics and become a confident user of accounting software. Practical exercises and clear explanations make learning effective and engaging",
+  "title": "Practical knowledge that works",
+  "text": "Over 30 video lessons",
+  "from": "from",
+  "button": "Buy discounted",
+  "title_plans": "Plans",
+  "basic": {
+    "name": "Basic",
+    "new_price": "99",
+    "old_price": "139",
+    "includes": [
+      "Access to 10 video lessons",
+      "Accounting fundamentals",
+      "Practical examples and exercises",
+      "Email support"
+    ]
+  },
+  "advanced": {
+    "name": "Advanced",
+    "new_price": "149",
+    "old_price": "199",
+    "includes": [
+      "Access to 25 video lessons",
+      "All materials from the Basic plan",
+      "Working with accounting software",
+      "Real company case studies",
+      "Completion certificate"
+    ]
+  },
+  "expert": {
+    "name": "Expert",
+    "new_price": "299",
+    "old_price": "500",
+    "includes": [
+      "Access to all 30+ video lessons",
+      "All materials from the Advanced plan",
+      "Personal consultations with the instructor",
+      "Additional practical assignments",
+      "In-depth topics: taxes, financial accounting, audit"
+    ]
+  },
+  "buy": "Buy",
+  "bestseller": "Best seller",
+  "title_footer": "From beginner to professional – your accounting journey",
+  "footer_text": "Resources to help you with it!"
+}
