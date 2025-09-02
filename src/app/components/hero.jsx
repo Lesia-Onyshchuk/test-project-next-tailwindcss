@@ -30,9 +30,9 @@ const Hero = () => {
             onClick={openModal}
             className="xl:w-[534px] xl:h-[74px] w-[313px] h-[60px] bg-white
             flex items-center justify-center
-            xl:text-[22px] text-[14px] text-black rounded-full leading-[1.66667] hover:bg-[#ff4a77]"
+            xl:text-[22px] text-[14px] text-black rounded-full leading-[1.66667] hover:bg-yellow-300"
           />
-          <p className="flex items-center justify-center xl:w-[74px] xl:h-[74px] w-[60px] h-[60px] font-semibold xl:text-2xl text-xl rounded-full text-white leading-[1.53509] bg-yellow-300 absolute top-0 right-0">
+          <p className="flex items-center justify-center xl:w-[74px] xl:h-[74px] w-[60px] h-[60px] font-semibold xl:text-2xl text-xl rounded-full text-black leading-[1.53509] bg-yellow-300 absolute top-0 right-0">
             -50%
           </p>
         </div>

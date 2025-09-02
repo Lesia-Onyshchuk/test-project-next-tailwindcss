@@ -13,7 +13,7 @@ const Language = () => {
     <div className="relative inline-block text-left">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="py-[10px] flex items-center gap-[9px] bg-transparent text-white hover:text-[#FF4A77] focus:outline-none"
+        className="py-[10px] flex items-center gap-[9px] bg-transparent text-white hover:text-yellow-300 focus:outline-none"
       >
         {selected}
         <IoIosArrowDown />
@@ -27,7 +27,7 @@ const Language = () => {
                 setSelected(lang);
                 setIsOpen(false);
               }}
-              className="w-full text-center px-1 py-1 hover:text-[#FF4A77]"
+              className="w-full text-center px-1 py-1 hover:text-yellow-300"
             >
               {lang}
             </button>

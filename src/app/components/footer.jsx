@@ -48,7 +48,7 @@ const Footer = () => {
           <div className="absolute z-20 left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2 xl:w-[400px] w-[280px] flex items-center flex-col">
             <h2 className="xl:text-4xl text-xl font-bold uppercase text-white text-center mb-[20px]">
               From beginner to professional –{" "}
-              <span className="bg-gradient-to-r from-[#5bdbfd] via-[#7b7cab] via-[#1f1d8b] to-[#ffffff] bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-[#5bdbfd] via-[#7b7cab] via-[#1f1d8b] to-[#7b7cab] bg-clip-text text-transparent">
                 your accounting journey
               </span>
             </h2>
@@ -58,11 +58,11 @@ const Footer = () => {
             <div className="relative z-20 xl:w-[480px] w-[268px] flex mb-[11px]">
               <BuyButton
                 onClick={openModal}
-                className="xl:w-[480px] xl:h-[74px] w-[268px] h-[68px] shadow-footer bg-[linear-gradient(121deg,#1f1d8b_0%,#7b7cab_40.3%,#ffffff_79.87%,#5bdbfd_100%)]
+                className="xl:w-[480px] xl:h-[74px] w-[268px] h-[68px] shadow-footer bg-[linear-gradient(121deg,#1f1d8b_0%,#7b7cab_40.3%,#7b7cab_79.87%,#5bdbfd_100%)]
                           flex items-center pl-[49px] xl:justify-center
-                          xl:text-[22px] text-sm text-black rounded-full leading-[1.66667] relative z-30"
+                          xl:text-[22px] text-sm text-white rounded-full leading-[1.66667] relative z-30"
               />
-              <p className="flex items-center justify-center xl:w-[74px] xl:h-[74px] w-[68px] h-[68px] font-semibold xl:text-2xl text-xl rounded-full text-white leading-[1.53509] bg-yellow-300 absolute top-0 right-0 z-40">
+              <p className="flex items-center justify-center xl:w-[74px] xl:h-[74px] w-[68px] h-[68px] font-semibold xl:text-2xl text-xl rounded-full text-black leading-[1.53509] bg-yellow-300 absolute top-0 right-0 z-40">
                 -50%
               </p>
             </div>

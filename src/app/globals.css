@@ -52,7 +52,8 @@ a {
 
 @layer utilities {
   .before-round-white,
-  .before-round-black {
+  .before-round-black,
+  .before-round-yellow {
     position: relative;
   }
   .before-round-white::before {
@@ -73,6 +74,18 @@ a {
     width: 20px;
     height: 20px;
     background-color: #0c0117;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    border-radius: 50%;
+  }
+  .before-round-yellow::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #fde68a;
     position: absolute;
     top: 50%;
     left: 0;

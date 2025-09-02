@@ -49,7 +49,7 @@ const BaseTariff = () => {
       </div>
       <button
         onClick={() => setOpen(true)}
-        className={`${fontsecond.className} xl:w-[287px] xl:h-[57px] w-[248px] h-[47px] bg-white text-[#0c0117] font-semibold xl:text-base text-sm rounded-[52px] hover:bg-[#ff4a77]`}
+        className={`${fontsecond.className} xl:w-[287px] xl:h-[57px] w-[248px] h-[47px] bg-white text-[#0c0117] font-semibold xl:text-base text-sm rounded-[52px] hover:bg-yellow-300`}
       >
         Buy
       </button>

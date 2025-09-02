@@ -23,27 +23,27 @@ const Navigation = () => {
         className={`${font.className} hidden text-base text-white gap-7 xl:flex`}
       >
         <li>
-          <Link href="#" className="py-[10.5px] hover:text-[#FF4A77]">
+          <Link href="#" className="py-[10.5px] hover:text-yellow-300">
             Home
           </Link>
         </li>
         <li>
-          <Link href="#" className="py-[10.5px] hover:text-[#FF4A77]">
+          <Link href="#" className="py-[10.5px] hover:text-yellow-300">
             About
           </Link>
         </li>
         <li>
-          <Link href="#" className="py-[10.5px] hover:text-[#FF4A77]">
+          <Link href="#" className="py-[10.5px] hover:text-yellow-300">
             Plans
           </Link>
         </li>
         <li>
-          <Link href="#" className="py-[10.5px] hover:text-[#FF4A77]">
+          <Link href="#" className="py-[10.5px] hover:text-yellow-300">
             Reviews
           </Link>
         </li>
         <li>
-          <Link href="#" className="py-[10.5px] hover:text-[#FF4A77]">
+          <Link href="#" className="py-[10.5px] hover:text-yellow-300">
             Contacts
           </Link>
         </li>
@@ -68,7 +68,7 @@ const Navigation = () => {
               <Link
                 href="#"
                 onClick={() => setIsOpen(false)}
-                className="hover:text-[#FF4A77]"
+                className="hover:text-yellow-300"
               >
                 Home
               </Link>
@@ -77,7 +77,7 @@ const Navigation = () => {
               <Link
                 href="#"
                 onClick={() => setIsOpen(false)}
-                className="hover:text-[#FF4A77]"
+                className="hover:text-yellow-300"
               >
                 About
               </Link>
@@ -86,7 +86,7 @@ const Navigation = () => {
               <Link
                 href="#"
                 onClick={() => setIsOpen(false)}
-                className="hover:text-[#FF4A77]"
+                className="hover:text-yellow-300"
               >
                 Plans
               </Link>
@@ -95,7 +95,7 @@ const Navigation = () => {
               <Link
                 href="#"
                 onClick={() => setIsOpen(false)}
-                className="hover:text-[#FF4A77]"
+                className="hover:text-yellow-300"
               >
                 Reviews
               </Link>
@@ -104,7 +104,7 @@ const Navigation = () => {
               <Link
                 href="#"
                 onClick={() => setIsOpen(false)}
-                className="hover:text-[#FF4A77]"
+                className="hover:text-yellow-300"
               >
                 Contacts
               </Link>

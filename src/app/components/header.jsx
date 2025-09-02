@@ -20,7 +20,7 @@ const Header = () => {
         className={`${font.className} flex gap-1 text-white xl:text-lg text-base uppercase w-[178px] xl:w-[200px]`}
       >
         <span>Learn</span>
-        <span className="bg-gradient-to-r from-[#5bdbfd] via-[#7b7cab] via-[#1f1d8b] to-[#ffffff] bg-clip-text text-transparent">
+        <span className="bg-gradient-to-r from-[#5bdbfd] via-[#7b7cab] via-[#1f1d8b] to-[#7b7cab] bg-clip-text text-transparent">
           Accounting
         </span>
       </Link>
@@ -31,9 +31,9 @@ const Header = () => {
         </div>
         <BuyButton
           onClick={openModal}
-          className="w-[190px] h-[40px] bg-[linear-gradient(121deg,#1f1d8b_0%,#7b7cab_40.3%,#ffffff_79.87%,#5bdbfd_100%)]
+          className="w-[190px] h-[40px] bg-[linear-gradient(121deg,#1f1d8b_0%,#7b7cab_40.3%,#7b7cab_79.87%,#5bdbfd_100%)]
             xl:flex items-center justify-center
-            text-xs text-black rounded-full hidden"
+            text-xs text-white rounded-full hidden"
         />
       </div>
     </header>
