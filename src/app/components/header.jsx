@@ -25,7 +25,7 @@ const Header = () => {
         </span>
       </Link>
       <div className="flex items-center xs:gap-0 xl:gap-[60px]">
-        <div className="flex flex-row-reverse xl:flex-row gap-[28px] xl:gap-[60px] xl:items-center">
+        <div className="flex flex-row-reverse xl:flex-row gap-[28px] xl:gap-[40px] xl:items-center">
           <Navigation />
           <Language />
         </div>

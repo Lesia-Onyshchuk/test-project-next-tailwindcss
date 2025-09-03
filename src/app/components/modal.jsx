@@ -4,10 +4,13 @@ import { Field, Form, Formik } from "formik";
 import React from "react";
 import { Raleway } from "next/font/google";
 import Image from "next/image";
+import { useLanguage } from "./lang-provider";
 
 const font = Raleway({ subsets: ["latin"] });
 
 const Modal = ({ onClose }) => {
+  const { t } = useLanguage();
+
   const initialValues = {
     name: "",
     nik: "",
@@ -43,13 +46,13 @@ const Modal = ({ onClose }) => {
         <h3
           className={`${font.className} text-white uppercase text-center font-bold text-l mb-[36px]`}
         >
-          Please provide your information
+          {t("modal_title")}
         </h3>
         <Formik initialValues={initialValues} onSubmit={handleSubmit}>
           <Form className="flex flex-col items-center xl:justify-start justify-between">
             <div className="flex flex-col w-full">
               <Field
-                placeholder="Name"
+                placeholder={t("modal_name")}
                 name="name"
                 className="w-full py-[15px] px-[20px] rounded-[14px] placeholder:text-[#0c0117]
                placeholder:text-[14px]
@@ -57,7 +60,7 @@ const Modal = ({ onClose }) => {
                placeholder:font-normal mb-[18px]"
               />
               <Field
-                placeholder="Telegram username"
+                placeholder={t("modal_telegram")}
                 name="nik"
                 className="w-full py-[15px] px-[20px] rounded-[14px] placeholder:text-[#0c0117]
                placeholder:text-[14px]
@@ -78,7 +81,7 @@ const Modal = ({ onClose }) => {
               type="submit"
               className={`${font.className} w-full h-[50px] bg-white text-[#0c0117] font-semibold text-sm rounded-[10px] hover:bg-yellow-300`}
             >
-              Send
+              {t("send")}
             </button>
           </Form>
         </Formik>

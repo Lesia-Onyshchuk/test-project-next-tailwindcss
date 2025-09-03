@@ -48,14 +48,14 @@ const Hero = () => {
         </div>
       </div>
       <div className="relative">
-        <p className="text-white xl:w-[460px] w-[313px] xl:text-lg text-sm font-normal pt-0 top-[-220px] xl:top-[84px] absolute text-center xl:text-left left-1/2 -translate-x-1/2 xl:left-[218px]">
+        <p className="text-white xl:w-[460px] w-[313px] xl:text-lg text-[14px] font-normal pt-0 top-[-240px] xl:top-[84px] absolute text-center xl:text-left left-1/2 -translate-x-1/2 xl:left-[218px]">
           {t("description")}
         </p>
-        <div className="absolute xl:left-[150px] left-1/2 -translate-x-1/2 xl:top-[220px] top-[-420px] text-center xl:text-left">
+        <div className="absolute xl:left-[170px] left-1/2 -translate-x-1/2 xl:top-[232px] top-[-430px] text-center xl:text-left">
           <p className="font-bold xl:text-[32px] text-[20px] xl:mb-[15px] mb-[4px] bg-gradient-to-r from-[#5bdbfd] via-[#7b7cab] via-[#1f1d8b] to-[#ffffff] bg-clip-text text-transparent">
             {t("text")}
           </p>
-          <h1 className="leading-[1.1] text-yellow-300 font-extrabold xl:text-[90px] text-[48px] uppercase xl:w-[600px] w-[313px] flex">
+          <h1 className="leading-[1.1] text-yellow-300 font-extrabold xl:text-[88px] text-[46px] uppercase xl:w-[600px] w-[313px] flex">
             {t("title")}
           </h1>
         </div>

@@ -57,11 +57,11 @@ const Footer = () => {
             <p className="text-white text-center xl:text-2xl text-sm font-medium xl:mb-[44px] mb-[62px]">
               {t("footer_text")}
             </p>
-            <div className="relative z-20 xl:w-[480px] w-[240px] flex mb-[11px]">
+            <div className="relative z-20 xl:w-[480px] w-[290px] flex mb-[11px]">
               <BuyButton
                 onClick={openModal}
-                className="xl:w-[480px] xl:h-[74px] w-[240px] h-[68px] shadow-footer bg-[linear-gradient(121deg,#1f1d8b_0%,#7b7cab_40.3%,#7b7cab_79.87%,#5bdbfd_100%)]
-                          flex items-center pl-[49px] xl:justify-center
+                className="xl:w-[480px] xl:h-[74px] w-[290px] h-[68px] shadow-footer bg-[linear-gradient(121deg,#1f1d8b_0%,#7b7cab_40.3%,#7b7cab_79.87%,#5bdbfd_100%)]
+                          flex items-center justify-center
                           xl:text-[22px] text-sm text-white rounded-full leading-[1.66667] relative z-30 hover:text-yellow-300 transition-colors duration-300 ease-in-out"
               />
               <p className="flex items-center justify-center xl:w-[74px] xl:h-[74px] w-[68px] h-[68px] font-semibold xl:text-2xl text-xl rounded-full text-black leading-[1.53509] bg-yellow-300 absolute top-0 right-0 z-40">

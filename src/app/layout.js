@@ -11,9 +11,9 @@ export default function RootLayout({ children }) {
         <meta name="description" content="My Next.js app with Tailwind" />
       </head>
       <body>
-        <ModalProvider>
-          <LanguageProvider>{children}</LanguageProvider>
-        </ModalProvider>
+        <LanguageProvider>
+          <ModalProvider>{children}</ModalProvider>
+        </LanguageProvider>
       </body>
     </html>
   );

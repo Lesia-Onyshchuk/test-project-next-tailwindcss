@@ -44,5 +44,9 @@
   "buy": "Buy",
   "bestseller": "Best seller",
   "title_footer": "From beginner to professional – your accounting journey",
-  "footer_text": "Resources to help you with it!"
+  "footer_text": "Resources to help you with it!",
+  "modal_title": "Please provide your information",
+  "modal_name": "Name",
+  "modal_telegram": "Telegram username",
+  "send": "Send"
 }

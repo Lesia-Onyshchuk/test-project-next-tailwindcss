@@ -22,7 +22,7 @@ const Navigation = () => {
         <Image src="/images/burger.png" width={31} height={21} alt="Menu" />
       </button>
       <ul
-        className={`${font.className} hidden text-base text-white gap-7 xl:flex`}
+        className={`${font.className} hidden text-base text-white gap-6 xl:flex`}
       >
         {t("nav").map((item, i) => (
           <li
